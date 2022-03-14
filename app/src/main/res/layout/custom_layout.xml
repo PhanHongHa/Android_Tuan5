@@ -7,42 +7,42 @@
     android:background="#F4DDDD">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img"
         android:layout_width="114dp"
         android:layout_height="102dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.524"
+        app:layout_constraintVertical_bias="0.48"
         app:srcCompat="@drawable/donut_yellow_1" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:text="Tasty Donut"
         android:textColor="#090202"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintStart_toEndOf="@+id/img"
+        app:layout_constraintTop_toTopOf="@+id/img" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtDescrip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Spicy tasty donut family"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txtPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -50,7 +50,20 @@
         android:textColor="#100404"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintStart_toStartOf="@+id/txtDescrip"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescrip" />
+
+    <ImageButton
+        android:id="@+id/btnPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#05FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toEndOf="@+id/txtPrice"
+        app:layout_constraintTop_toTopOf="@+id/txtPrice"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/plus_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
